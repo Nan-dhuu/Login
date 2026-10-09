@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Dashboard</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+    <div class="dashboard">
+
+        <h1>Employee Management</h1>
+
+        <h2>Welcome Admin </h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <h3>Total Employees</h3>
+                <p>10</p>
+            </div>
+
+            <div class="card">
+                <h3>Department</h3>
+                <p>IT</p>
+            </div>
+
+            <div class="card">
+                <h3>Attendance</h3>
+                <p>95%</p>
+            </div>
+
+        </div>
+
+        <a href="{{ url_for('logout') }}">
+            <button>Logout</button>
+        </a>
+
+    </div>
+
+</body>
+
+</html>
